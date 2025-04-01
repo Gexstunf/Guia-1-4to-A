@@ -4,32 +4,22 @@ using UnityEngine;
 
 public class CálculosPersonalizados : MonoBehaviour
 {
-    public enum TipoOperacion { Suma, Resta, Multiplicacion, Division }
-    public TipoOperacion operacionSeleccionada;
 
     public float num1 = 10f;
     public float num2 = 5f;
+    float resultado;
 
     void Start()
     {
-        float resultado = RealizarOperacion(num1, num2, operacionSeleccionada);
-        Debug.Log("El resultado de la " + operacionSeleccionada + " entre " + num1 + " y " + num2 + " es: " + resultado);
+        resultado = num1 + num2;
+        Debug.Log("El resultado de la suma entre " + num1 + " y " + num2 + " es: " + resultado);
+        resultado = num1 - num2;
+        Debug.Log("El resultado de la resta entre " + num1 + " y " + num2 + " es: " + resultado);
+        resultado = num1 * num2;
+        Debug.Log("El resultado de la multiplicacion entre " + num1 + " y " + num2 + " es: " + resultado);
+        resultado = num1 / num2;
+        Debug.Log("El resultado de la division entre " + num1 + " y " + num2 + " es: " + resultado);
+
     }
 
-    float RealizarOperacion(float a, float b, TipoOperacion operacion)
-    {
-        switch (operacion)
-        {
-            case TipoOperacion.Suma:
-                return a + b;
-            case TipoOperacion.Resta:
-                return a - b;
-            case TipoOperacion.Multiplicacion:
-                return a * b;
-            case TipoOperacion.Division:
-                return b != 0 ? a / b : 0;
-            default:
-                return 0;
-        }
-    }
 }
