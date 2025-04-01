@@ -266,6 +266,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b08c64eb4706b94383411cf56a7a470, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  operacionSeleccionada: 3
+  num1: 5
+  num2: 1
 --- !u!4 &1221257512
 Transform:
   m_ObjectHideFlags: 0
@@ -296,7 +299,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1422713405
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -309,8 +312,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c494201eaaa02a43933a66e9257bdb3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  num1: 0
-  num2: 0
+  num1: 1
+  num2: 6
   resultado: 0
 --- !u!4 &1422713406
 Transform:

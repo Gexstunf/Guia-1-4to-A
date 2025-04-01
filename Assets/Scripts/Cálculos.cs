@@ -10,10 +10,8 @@ public class Cálculos : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        num1 = Random.Range(1, 101);
-        num2 = Random.Range(1, 101);
         resultado = num2 + num1;
-        Debug.Log("La suma entre " + num1 + " y " + num2 + " es " + resultado);
+        Debug.Log(resultado);
     }
 
     // Update is called once per frame
